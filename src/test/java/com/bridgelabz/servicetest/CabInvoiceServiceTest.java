@@ -1,12 +1,9 @@
 package com.bridgelabz.servicetest;
-
 import com.bridgelabz.service.CabInvoiceService;
 import com.bridgelabz.service.InvoiceSummary;
 import com.bridgelabz.service.Ride;
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
-
 public class CabInvoiceServiceTest {
     CabInvoiceService invoiceServiceForPremimum = new CabInvoiceService(CabInvoiceService.subscriptionPlan.PremimumRides);
     CabInvoiceService invoiceServiceForNormal = new CabInvoiceService(CabInvoiceService.subscriptionPlan.NormalRides);
@@ -81,7 +78,7 @@ public class CabInvoiceServiceTest {
     }
 
     @Test
-    public void givenUserIdAndRide_withPremimumPlan_shouldReturnInvoiceSummary() {
+    public void givenUserIdandRide_withPremimumPlan_shouldReturnInvoiceSummary() {
         String userId = "gdev3123@gmail.com";
         Ride[] rides = {
                 new Ride(2.0, 5),
